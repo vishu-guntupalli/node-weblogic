@@ -90,4 +90,4 @@ Returns a list of all jdbc's configuration.
 Returns a list of all servers' configuration.  
 
 **Object getServerRuntime(serverName);**  
-Returns and object with all runtimes, such as application, jdbc, jvm and threadpool.  
+Returns an Object with all runtimes, such as application, jdbc, jvm and threadpool.  
