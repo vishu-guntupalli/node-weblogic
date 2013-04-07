@@ -1,0 +1,29 @@
+{
+  "name": "weblogic",
+  "version": "0.0.1",
+  "description": "WebLogic Client",
+  "keywords": [
+    "weblogic",
+    "admin",
+    "wlst"
+  ],
+  "homepage": "https://github.com/dunse/node-weblogic",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dunse/node-weblogic.git"
+  },
+  "author": "Pehr Johansson <pehr.l.johansson@gmail.com>",
+  "main": "./lib",
+  "dependencies": {
+    "java": "0.2.2",
+    "cloneextend": "0.0.3"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}
