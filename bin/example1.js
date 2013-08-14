@@ -10,9 +10,9 @@ var config = {
 };
 
 var weblogic = new Client(config);
-weblogic.on('connect', function() {
-var states = weblogic.getServerStates();
-console.log(JSON.stringify(states, null, '\t'));
+weblogic.connect(function(err) {
+  weblogic.getServerStates(function(err, states) {
+    console.log(JSON.stringify(states, null, '\t'));
+  });
 });
-weblogic.connect();
 

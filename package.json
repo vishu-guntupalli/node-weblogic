@@ -1,6 +1,6 @@
 {
   "name": "weblogic",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "WebLogic Client",
   "keywords": [
     "weblogic",
@@ -16,6 +16,7 @@
   "main": "./lib",
   "dependencies": {
     "java": "0.2.3",
+    "async": "0.2.9",
     "cloneextend": "0.0.3"
   },
   "engines": {
