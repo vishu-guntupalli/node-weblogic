@@ -45,7 +45,7 @@ In package.js, add weblogic dependency:
 ```javascript
   "dependencies": {
 ...
-    "weblogic": "0.0.1",
+    "weblogic": "0.1.0",
 ...
 },
 ```
@@ -64,30 +64,29 @@ var config = {
 };
 
 var weblogic = new WebLogicClient(config);
-weblogic.on('connect', function() {
+weblogic.connect(function(err) {
   /* Add code here */
 });
-weblogic.connect();
 ```
 
 ## API  
-**Object getServerStates();**  
+**Object getServerStates(callback);**  
 Returns an Object with all configuration and metrics available.  
   
-**Array getClustersConfig();**  
+**Array getClustersConfig(callback);**  
 Returns a list of all clusters configuration.  
   
-**Object getDomainConfig();**  
+**Object getDomainConfig(callback);**  
 Returns an Object with the domain configuration.  
   
-**Array getApplicationsConfig();**  
+**Array getApplicationsConfig(callback);**  
 Returns a list of all application's configuration.  
   
-**Array getJDBCConfig();**  
+**Array getJDBCConfig(callback);**  
 Returns a list of all jdbc's configuration.  
   
-**Array getServersConfig();**  
+**Array getServersConfig(callback);**  
 Returns a list of all servers' configuration.  
 
-**Object getServerRuntime(serverName);**  
+**Object getServerRuntime(serverName, callback);**  
 Returns an Object with all runtimes, such as application, jdbc, jvm and threadpool.  
