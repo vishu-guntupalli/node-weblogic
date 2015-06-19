@@ -15,7 +15,7 @@
   "author": "Pehr Johansson <pehr.l.johansson@gmail.com>",
   "main": "./lib",
   "dependencies": {
-    "java": "0.2.4",
+    "java": "0.5.4",
     "async": "0.2.9",
     "cloneextend": "0.0.3"
   },
